@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Client</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body id="standard">
+
+    <div border="1" width="1z00">
+<div id="hej" th:each="client : ${displayKey}">
+    <font color ="black" style="font-family: Calibri" th:text="'Name: ' + ${client.name}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'Surname: ' + ${client.surname}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'Mail:  ' + ${client.mail}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'Address: ' + ${client.address}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'Phone: ' + ${client.phone}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'Another Information: ' + ${client.anotherInformation}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'ID:  ' + ${client.id}"></font><br>
+    <font color ="black" style="font-family: Calibri">----------------------------</font>
+
+</div>
+<form method="get">
+    <button formaction="/home">Back to Menu</button>
+</form>
+    </div>
+
+</body>
+</html>

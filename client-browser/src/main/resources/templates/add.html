@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Client</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="standard">
+<center>
+
+<form method="post">
+    <input type="text" placeholder="Name" name="name" th:field="*{clientKey.name}"><br>
+    <input type="text" placeholder="Surname" name="surname" th:field="*{clientKey.surname}"><br>
+    <input type="email" placeholder="Mail" name="mail" th:field="*{clientKey.Mail}"><br>
+    <input type="text" placeholder="Address" name="address" th:field="*{clientKey.address}"><br>
+    <input type="number" placeholder="Phone" name="phone" th:field="*{clientKey.phone}"><br>
+    <input type="text" placeholder="Another Information" name="anotherInformation" th:field="*{clientKey.anotherInformation}"><br>
+    <input type="submit" value="OK">
+</form>
+</center>
+</body>
+</html>

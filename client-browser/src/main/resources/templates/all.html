@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LoginApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="standard">
+
+    <div border="1" width="1z00">
+   <font color ="black" style="font-family: Calibri"> CLIENTS</font>
+    <br>
+   <font color ="black" style="font-family: Calibri"> ----------------------------</font>
+    <br>
+    
+<div id="hej" th:each="client : ${clientslist}">
+    <font color ="black" style="font-family: Calibri" th:text="'Name: ' + ${client.name}"></font><br>
+    <font color ="black" style="font-family: Calibri" th:text="'Surname: ' + ${client.surname}"></font><br>
+        <font color ="black" style="font-family: Calibri" th:text="'ID:  ' + ${client.id}"></font><br>
+    <font color ="black" style="font-family: Calibri">----------------------------</font>
+
+</div>
+<form method="get">
+    <button formaction="/home">Back to Menu</button>
+</form>
+    </div>
+
+</body>
+</html>

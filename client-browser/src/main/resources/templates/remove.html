@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="standard">
+<center>
+<form method="post">
+    <input type="number" placeholder="Type ID" name="name" th:field="*{removeKey.id}"><br>
+<input type="submit" value="OK">
+    <br>
+    <br>
+
+</form>
+
+    <form  method="get">
+        <button type="submit" formaction="/home">Back to Menu</button><br>
+    </form>
+</center>
+
+</body>
+</html>
