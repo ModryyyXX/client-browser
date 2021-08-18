@@ -13,9 +13,16 @@ Project is created with:
 * Spring Boot version 2.2.1
 * JDBC version 9.2.1
 	
-## Setup
-#### Settings DB
+## Setup DB (SQL SERVER)
+#### Settings for Windows Authentication
   
+  ```
+$ cd ../lorem
+$ npm install
+$ npm start
+```
+#### Settings with Login and Password
+
 ## Installation
 #### Running the application with IDE
 
@@ -30,8 +37,4 @@ Project is created with:
 * 	Select App - TaskForJob
 * 	Done
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
+
