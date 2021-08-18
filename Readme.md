@@ -14,12 +14,10 @@ Project is created with:
 * JDBC version 9.2.1
 	
 ## Setup
-
+#### Settings DB
   
 ## Installation
 #### Running the application with IDE
-
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.arc.sbtest.SBtemplateApplication` class from your IDE.
 
 * 	Download the zip or clone the Git repository.
 * 	Unzip the zip file (if you downloaded one)
@@ -29,7 +27,8 @@ There are several ways to run a Spring Boot application on your local machine. O
 	* Select the project
 * 	Choose the Spring Boot Application file (search for @SpringBootApplication)
 * 	Right Click on the file and Run as Java Application
-
+* 	Select App - TaskForJob
+* 	Done
 
 ```
 $ cd ../lorem
