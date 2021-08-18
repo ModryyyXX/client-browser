@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup DB](#Setup-DB)
+* [Setup DB](#Setup-DB-(SQL SERVER))
 * [Setup Hibernate](#Setup-hibernate)
 * [Installation](#Installation)
 
