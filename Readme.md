@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup DB](#Setup-DB-(SQL SERVER))
+* [Setup DB](#Setup-DB)
 * [Setup Hibernate](#Setup-hibernate)
 * [Installation](#Installation)
 
@@ -14,7 +14,8 @@ Project is created with:
 * Spring Boot version 2.2.1
 * JDBC version 9.2.1
 	
-## Setup DB (SQL SERVER)	
+## Setup DB	
+### SQL SERVER
 Sample code creating a database 
 
 * Creating DB
@@ -45,7 +46,8 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 ```
-## Setup Hibernate (SQL SERVER)
+## Setup Hibernate
+### SQL SERVER
 #### Settings for Windows Authentication
 
 * Change the server, port and database name for your data. 
