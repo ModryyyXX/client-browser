@@ -1,8 +1,8 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup DB](#Setup DB)
-* [Setup Hibernate](#Setup Hibernate)
+* [Setup DB](#Setup-DB-(SQL SERVER))
+* [Setup Hibernate](#Setup-hibernate)
 * [Installation](#Installation)
 
 ## General info
@@ -15,7 +15,7 @@ Project is created with:
 * JDBC version 9.2.1
 	
 ## Setup DB (SQL SERVER)	
-* Sample code creating a database 
+Sample code creating a database 
 
 * Creating DB
 ```shell
