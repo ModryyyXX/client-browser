@@ -16,13 +16,12 @@ Project is created with:
 ## Setup DB (SQL SERVER)
 #### Settings for Windows Authentication
 
-  ```
-$   <img src="https://raw.githubusercontent.com/ModryyyXX/client-browser/master/documents/pics2.png"/>
-$ npm install
-$ npm start
-```
+<img src="https://raw.githubusercontent.com/ModryyyXX/client-browser/master/documents/pics1.png"/>
+
 #### Settings with Login and Password
-  <img src="https://raw.githubusercontent.com/ModryyyXX/client-browser/master/documents/pics1.png"/>
+
+  <img src="https://raw.githubusercontent.com/ModryyyXX/client-browser/master/documents/pics2.png"/>
+  
 ## Installation
 #### Running the application with IDE
 
