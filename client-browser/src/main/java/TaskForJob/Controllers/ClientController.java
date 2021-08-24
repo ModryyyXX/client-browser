@@ -1,11 +1,7 @@
 package TaskForJob.Controllers;
-import java.util.Optional;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -65,8 +61,10 @@ public ModelAndView removePage(){
 public String removeForm(@ModelAttribute("removeKey") Client client) {
 
 	DBConnector app = new DBConnector();
+	System.out.println(app.ClientExist(client.getId()));
+	if(app.ClientExist(client.getId())) {
 	app.removeClient(client.getId());
-
+	}
     return "redirect:home";
 }
 
@@ -86,24 +84,27 @@ public ModelAndView dPage(){
 
 @RequestMapping(value = "/display", method = RequestMethod.POST)
 public String displayForm(final Model model, @ModelAttribute("displayKey") Client client, 
-		final RedirectAttributes redirectAttributes,
-		final BindingResult mapping1BindingResult) {
+		final RedirectAttributes redirectAttributes
+		) {
 
 	DBConnector app = new DBConnector();
 	
 	Client client2 = app.detailsOfClient(client.getId());
 	client = client2;
-	model.addAttribute("displayKey",app.detailsOfClient(client.getId()));
 	
+	model.addAttribute("displayKey",app.detailsOfClient(client.getId()));
+
 	redirectAttributes.addFlashAttribute("displayKey",  client);
+
     return "redirect:result";
 }
 
 @RequestMapping(value = "/result", method = RequestMethod.GET)
 public String resultPage( @ModelAttribute("displayKey") final Client client,
-        final BindingResult mapping1BindingResult,
         final Model model){
+
 	model.addAttribute("displayKey", client);
+
 	
     return "result";
 }
