@@ -82,6 +82,7 @@ public void addClient(Client client){
     }
 	}
 	else
+		
 		System.out.println("the data isn't correct");
 	
 }
@@ -122,7 +123,7 @@ public Client detailsOfClient(int ID) {
 	 
 	 System.out.println(client2);
 	 
-	if(ClientExist(ID) ==true) {
+	if(ClientExist(ID) ==true  ) {
 	
 	Session session = factory.openSession();
 	Client client = (Client) session.createQuery("from TaskForJob.model.Client where ID = "+ID).uniqueResult();
